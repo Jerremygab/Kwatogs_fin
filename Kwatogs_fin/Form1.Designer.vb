@@ -25,8 +25,10 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("")
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Lomi_Price3 = New System.Windows.Forms.Label()
         Me.Lomi_Price1 = New System.Windows.Forms.Label()
         Me.Lomi_Price2 = New System.Windows.Forms.Label()
@@ -37,8 +39,8 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Lomi_Cat1 = New System.Windows.Forms.RadioButton()
         Me.Lomi_Txt = New System.Windows.Forms.Label()
-        Me.Price_Listbox = New System.Windows.Forms.ListBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Canton_Price3 = New System.Windows.Forms.Label()
         Me.Canton_Price1 = New System.Windows.Forms.Label()
         Me.Canton_Price2 = New System.Windows.Forms.Label()
@@ -50,6 +52,7 @@ Partial Class Form1
         Me.Canton_Cat1 = New System.Windows.Forms.RadioButton()
         Me.Canton_Txt = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Chami_Price3 = New System.Windows.Forms.Label()
         Me.Chami_Price1 = New System.Windows.Forms.Label()
         Me.Chami_Price2 = New System.Windows.Forms.Label()
@@ -61,6 +64,7 @@ Partial Class Form1
         Me.Chami_Cat1 = New System.Windows.Forms.RadioButton()
         Me.Chami_Txt = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Bihon_Price3 = New System.Windows.Forms.Label()
         Me.Bihon_Price1 = New System.Windows.Forms.Label()
         Me.Bihon_Price2 = New System.Windows.Forms.Label()
@@ -72,6 +76,7 @@ Partial Class Form1
         Me.Bihon_Cat1 = New System.Windows.Forms.RadioButton()
         Me.Bihon_Txt = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.BlackG_Price3 = New System.Windows.Forms.Label()
         Me.BlackG_Price1 = New System.Windows.Forms.Label()
         Me.BlackG_Price2 = New System.Windows.Forms.Label()
@@ -83,6 +88,7 @@ Partial Class Form1
         Me.BlackG_Cat1 = New System.Windows.Forms.RadioButton()
         Me.BlackG_Txt = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Yakisoba_Price3 = New System.Windows.Forms.Label()
         Me.Yakisoba_Price1 = New System.Windows.Forms.Label()
         Me.Yakisoba_Price2 = New System.Windows.Forms.Label()
@@ -94,6 +100,7 @@ Partial Class Form1
         Me.Yakisoba_Cat1 = New System.Windows.Forms.RadioButton()
         Me.Yakisoba_Txt = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Sotanghon_Price3 = New System.Windows.Forms.Label()
         Me.Sotanghon_Price1 = New System.Windows.Forms.Label()
         Me.Sotanghon_Price2 = New System.Windows.Forms.Label()
@@ -120,35 +127,83 @@ Partial Class Form1
         Me.Rice_But = New System.Windows.Forms.Button()
         Me.Rice_Qty = New System.Windows.Forms.TextBox()
         Me.Label29 = New System.Windows.Forms.Label()
-        Me.Orders_Listbox = New System.Windows.Forms.ListBox()
         Me.Proceed_but = New System.Windows.Forms.Button()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Again_But = New System.Windows.Forms.Button()
-        Me.Done_But = New System.Windows.Forms.Button()
-        Me.Change = New System.Windows.Forms.TextBox()
-        Me.Paid = New System.Windows.Forms.TextBox()
-        Me.Discount = New System.Windows.Forms.TextBox()
-        Me.TotalAmount = New System.Windows.Forms.TextBox()
-        Me.Dc2 = New System.Windows.Forms.RadioButton()
-        Me.Dc3 = New System.Windows.Forms.RadioButton()
-        Me.Dc1 = New System.Windows.Forms.RadioButton()
-        Me.name_txt = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.discounted_amount = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.sukli = New System.Windows.Forms.TextBox()
+        Me.bayad = New System.Windows.Forms.TextBox()
+        Me.num_discounted = New System.Windows.Forms.TextBox()
+        Me.Label84 = New System.Windows.Forms.Label()
+        Me.tot_due = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label85 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label86 = New System.Windows.Forms.Label()
+        Me.vat = New System.Windows.Forms.TextBox()
+        Me.sub_tot = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Done_but = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.dc2 = New System.Windows.Forms.RadioButton()
+        Me.dc1 = New System.Windows.Forms.RadioButton()
+        Me.Costumer_name = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.num_customer = New System.Windows.Forms.TextBox()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.tapsilog = New System.Windows.Forms.Label()
+        Me.tapsilog_price = New System.Windows.Forms.Label()
+        Me.tapsilog_but = New System.Windows.Forms.Button()
+        Me.tapsilog_qty = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.tocilog_ = New System.Windows.Forms.PictureBox()
+        Me.tocilog = New System.Windows.Forms.Label()
+        Me.tocilog_price = New System.Windows.Forms.Label()
+        Me.tocilog_but = New System.Windows.Forms.Button()
+        Me.tocilog_qty = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.chicksilog = New System.Windows.Forms.Label()
+        Me.chicksilog_price = New System.Windows.Forms.Label()
+        Me.chicksilog_but = New System.Windows.Forms.Button()
+        Me.chicksilog_qty = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.Column_qty = New System.Windows.Forms.ColumnHeader()
+        Me.Column_Desc = New System.Windows.Forms.ColumnHeader()
+        Me.Column_Price = New System.Windows.Forms.ColumnHeader()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel10.SuspendLayout()
+        Me.Panel27.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel12.SuspendLayout()
+        CType(Me.tocilog_, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel13.SuspendLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -156,6 +211,8 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Bauhaus 93", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Label1.Location = New System.Drawing.Point(524, 9)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
@@ -166,6 +223,9 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Lomi_Price3)
         Me.Panel1.Controls.Add(Me.Lomi_Price1)
         Me.Panel1.Controls.Add(Me.Lomi_Price2)
@@ -176,11 +236,21 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Lomi_Cat1)
         Me.Panel1.Controls.Add(Me.Lomi_Txt)
-        Me.Panel1.Location = New System.Drawing.Point(61, 191)
+        Me.Panel1.Location = New System.Drawing.Point(31, 145)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(164, 210)
+        Me.Panel1.Size = New System.Drawing.Size(305, 210)
         Me.Panel1.TabIndex = 1
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Kwatogs_fin.My.Resources.Resources.lomi
+        Me.PictureBox1.Location = New System.Drawing.Point(168, 42)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(129, 110)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
         '
         'Lomi_Price3
         '
@@ -199,7 +269,7 @@ Partial Class Form1
         Me.Lomi_Price1.AutoSize = True
         Me.Lomi_Price1.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Lomi_Price1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Lomi_Price1.Location = New System.Drawing.Point(121, 42)
+        Me.Lomi_Price1.Location = New System.Drawing.Point(129, 42)
         Me.Lomi_Price1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lomi_Price1.Name = "Lomi_Price1"
         Me.Lomi_Price1.Size = New System.Drawing.Size(32, 22)
@@ -211,7 +281,7 @@ Partial Class Form1
         Me.Lomi_Price2.AutoSize = True
         Me.Lomi_Price2.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Lomi_Price2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Lomi_Price2.Location = New System.Drawing.Point(121, 76)
+        Me.Lomi_Price2.Location = New System.Drawing.Point(129, 76)
         Me.Lomi_Price2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lomi_Price2.Name = "Lomi_Price2"
         Me.Lomi_Price2.Size = New System.Drawing.Size(32, 22)
@@ -248,6 +318,7 @@ Partial Class Form1
         '
         'Lomi_But
         '
+        Me.Lomi_But.BackColor = System.Drawing.Color.BurlyWood
         Me.Lomi_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Lomi_But.Location = New System.Drawing.Point(37, 170)
         Me.Lomi_But.Margin = New System.Windows.Forms.Padding(4)
@@ -255,7 +326,7 @@ Partial Class Form1
         Me.Lomi_But.Size = New System.Drawing.Size(107, 28)
         Me.Lomi_But.TabIndex = 4
         Me.Lomi_But.Text = "Add"
-        Me.Lomi_But.UseVisualStyleBackColor = True
+        Me.Lomi_But.UseVisualStyleBackColor = False
         '
         'Lomi_Qty
         '
@@ -303,19 +374,12 @@ Partial Class Form1
         Me.Lomi_Txt.TabIndex = 0
         Me.Lomi_Txt.Text = "LOMI"
         '
-        'Price_Listbox
-        '
-        Me.Price_Listbox.FormattingEnabled = True
-        Me.Price_Listbox.ItemHeight = 18
-        Me.Price_Listbox.Location = New System.Drawing.Point(1015, 179)
-        Me.Price_Listbox.Margin = New System.Windows.Forms.Padding(4)
-        Me.Price_Listbox.Name = "Price_Listbox"
-        Me.Price_Listbox.Size = New System.Drawing.Size(182, 166)
-        Me.Price_Listbox.TabIndex = 2
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.Canton_Price3)
         Me.Panel2.Controls.Add(Me.Canton_Price1)
         Me.Panel2.Controls.Add(Me.Canton_Price2)
@@ -326,11 +390,21 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.Canton_Cat1)
         Me.Panel2.Controls.Add(Me.Canton_Txt)
-        Me.Panel2.Location = New System.Drawing.Point(233, 190)
+        Me.Panel2.Location = New System.Drawing.Point(340, 145)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(215, 210)
+        Me.Panel2.Size = New System.Drawing.Size(357, 210)
         Me.Panel2.TabIndex = 10
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Kwatogs_fin.My.Resources.Resources.canton
+        Me.PictureBox2.Location = New System.Drawing.Point(217, 35)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(129, 110)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 11
+        Me.PictureBox2.TabStop = False
         '
         'Canton_Price3
         '
@@ -398,6 +472,7 @@ Partial Class Form1
         '
         'Canton_But
         '
+        Me.Canton_But.BackColor = System.Drawing.Color.BurlyWood
         Me.Canton_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Canton_But.Location = New System.Drawing.Point(37, 170)
         Me.Canton_But.Margin = New System.Windows.Forms.Padding(4)
@@ -405,7 +480,7 @@ Partial Class Form1
         Me.Canton_But.Size = New System.Drawing.Size(107, 28)
         Me.Canton_But.TabIndex = 4
         Me.Canton_But.Text = "Add"
-        Me.Canton_But.UseVisualStyleBackColor = True
+        Me.Canton_But.UseVisualStyleBackColor = False
         '
         'Canton_Qty
         '
@@ -456,6 +531,9 @@ Partial Class Form1
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Transparent
+        Me.Panel3.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel3.Controls.Add(Me.PictureBox3)
         Me.Panel3.Controls.Add(Me.Chami_Price3)
         Me.Panel3.Controls.Add(Me.Chami_Price1)
         Me.Panel3.Controls.Add(Me.Chami_Price2)
@@ -466,11 +544,21 @@ Partial Class Form1
         Me.Panel3.Controls.Add(Me.Label7)
         Me.Panel3.Controls.Add(Me.Chami_Cat1)
         Me.Panel3.Controls.Add(Me.Chami_Txt)
-        Me.Panel3.Location = New System.Drawing.Point(456, 191)
+        Me.Panel3.Location = New System.Drawing.Point(705, 145)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(204, 210)
+        Me.Panel3.Size = New System.Drawing.Size(347, 210)
         Me.Panel3.TabIndex = 11
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Kwatogs_fin.My.Resources.Resources.chami
+        Me.PictureBox3.Location = New System.Drawing.Point(207, 35)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(129, 110)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 12
+        Me.PictureBox3.TabStop = False
         '
         'Chami_Price3
         '
@@ -538,6 +626,7 @@ Partial Class Form1
         '
         'Chami_But
         '
+        Me.Chami_But.BackColor = System.Drawing.Color.BurlyWood
         Me.Chami_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Chami_But.Location = New System.Drawing.Point(37, 170)
         Me.Chami_But.Margin = New System.Windows.Forms.Padding(4)
@@ -545,7 +634,7 @@ Partial Class Form1
         Me.Chami_But.Size = New System.Drawing.Size(107, 28)
         Me.Chami_But.TabIndex = 4
         Me.Chami_But.Text = "Add"
-        Me.Chami_But.UseVisualStyleBackColor = True
+        Me.Chami_But.UseVisualStyleBackColor = False
         '
         'Chami_Qty
         '
@@ -596,6 +685,9 @@ Partial Class Form1
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Transparent
+        Me.Panel4.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel4.Controls.Add(Me.PictureBox6)
         Me.Panel4.Controls.Add(Me.Bihon_Price3)
         Me.Panel4.Controls.Add(Me.Bihon_Price1)
         Me.Panel4.Controls.Add(Me.Bihon_Price2)
@@ -606,11 +698,21 @@ Partial Class Form1
         Me.Panel4.Controls.Add(Me.Label12)
         Me.Panel4.Controls.Add(Me.Bihon_Cat1)
         Me.Panel4.Controls.Add(Me.Bihon_Txt)
-        Me.Panel4.Location = New System.Drawing.Point(664, 191)
+        Me.Panel4.Location = New System.Drawing.Point(432, 581)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(203, 210)
+        Me.Panel4.Size = New System.Drawing.Size(347, 210)
         Me.Panel4.TabIndex = 11
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.Kwatogs_fin.My.Resources.Resources.bihon
+        Me.PictureBox6.Location = New System.Drawing.Point(207, 42)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(129, 110)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 13
+        Me.PictureBox6.TabStop = False
         '
         'Bihon_Price3
         '
@@ -678,6 +780,7 @@ Partial Class Form1
         '
         'Bihon_But
         '
+        Me.Bihon_But.BackColor = System.Drawing.Color.BurlyWood
         Me.Bihon_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Bihon_But.Location = New System.Drawing.Point(37, 170)
         Me.Bihon_But.Margin = New System.Windows.Forms.Padding(4)
@@ -685,7 +788,7 @@ Partial Class Form1
         Me.Bihon_But.Size = New System.Drawing.Size(107, 28)
         Me.Bihon_But.TabIndex = 4
         Me.Bihon_But.Text = "Add"
-        Me.Bihon_But.UseVisualStyleBackColor = True
+        Me.Bihon_But.UseVisualStyleBackColor = False
         '
         'Bihon_Qty
         '
@@ -736,6 +839,9 @@ Partial Class Form1
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Transparent
+        Me.Panel5.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel5.Controls.Add(Me.PictureBox4)
         Me.Panel5.Controls.Add(Me.BlackG_Price3)
         Me.Panel5.Controls.Add(Me.BlackG_Price1)
         Me.Panel5.Controls.Add(Me.BlackG_Price2)
@@ -746,11 +852,21 @@ Partial Class Form1
         Me.Panel5.Controls.Add(Me.Label17)
         Me.Panel5.Controls.Add(Me.BlackG_Cat1)
         Me.Panel5.Controls.Add(Me.BlackG_Txt)
-        Me.Panel5.Location = New System.Drawing.Point(61, 408)
+        Me.Panel5.Location = New System.Drawing.Point(28, 363)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(234, 210)
+        Me.Panel5.Size = New System.Drawing.Size(376, 210)
         Me.Panel5.TabIndex = 11
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Kwatogs_fin.My.Resources.Resources.balackg
+        Me.PictureBox4.Location = New System.Drawing.Point(237, 42)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(129, 110)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 11
+        Me.PictureBox4.TabStop = False
         '
         'BlackG_Price3
         '
@@ -818,6 +934,7 @@ Partial Class Form1
         '
         'BlackG_But
         '
+        Me.BlackG_But.BackColor = System.Drawing.Color.BurlyWood
         Me.BlackG_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.BlackG_But.Location = New System.Drawing.Point(37, 170)
         Me.BlackG_But.Margin = New System.Windows.Forms.Padding(4)
@@ -825,7 +942,7 @@ Partial Class Form1
         Me.BlackG_But.Size = New System.Drawing.Size(107, 28)
         Me.BlackG_But.TabIndex = 4
         Me.BlackG_But.Text = "Add"
-        Me.BlackG_But.UseVisualStyleBackColor = True
+        Me.BlackG_But.UseVisualStyleBackColor = False
         '
         'BlackG_Qty
         '
@@ -876,6 +993,9 @@ Partial Class Form1
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.Transparent
+        Me.Panel6.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel6.Controls.Add(Me.PictureBox5)
         Me.Panel6.Controls.Add(Me.Yakisoba_Price3)
         Me.Panel6.Controls.Add(Me.Yakisoba_Price1)
         Me.Panel6.Controls.Add(Me.Yakisoba_Price2)
@@ -886,11 +1006,21 @@ Partial Class Form1
         Me.Panel6.Controls.Add(Me.Label22)
         Me.Panel6.Controls.Add(Me.Yakisoba_Cat1)
         Me.Panel6.Controls.Add(Me.Yakisoba_Txt)
-        Me.Panel6.Location = New System.Drawing.Point(303, 411)
+        Me.Panel6.Location = New System.Drawing.Point(412, 363)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(233, 210)
+        Me.Panel6.Size = New System.Drawing.Size(375, 210)
         Me.Panel6.TabIndex = 11
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.Kwatogs_fin.My.Resources.Resources.yakisoba
+        Me.PictureBox5.Location = New System.Drawing.Point(237, 42)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(129, 110)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 12
+        Me.PictureBox5.TabStop = False
         '
         'Yakisoba_Price3
         '
@@ -958,6 +1088,7 @@ Partial Class Form1
         '
         'Yakisoba_But
         '
+        Me.Yakisoba_But.BackColor = System.Drawing.Color.BurlyWood
         Me.Yakisoba_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Yakisoba_But.Location = New System.Drawing.Point(37, 170)
         Me.Yakisoba_But.Margin = New System.Windows.Forms.Padding(4)
@@ -965,7 +1096,7 @@ Partial Class Form1
         Me.Yakisoba_But.Size = New System.Drawing.Size(107, 28)
         Me.Yakisoba_But.TabIndex = 4
         Me.Yakisoba_But.Text = "Add"
-        Me.Yakisoba_But.UseVisualStyleBackColor = True
+        Me.Yakisoba_But.UseVisualStyleBackColor = False
         '
         'Yakisoba_Qty
         '
@@ -1016,6 +1147,9 @@ Partial Class Form1
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.Transparent
+        Me.Panel7.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel7.Controls.Add(Me.PictureBox7)
         Me.Panel7.Controls.Add(Me.Sotanghon_Price3)
         Me.Panel7.Controls.Add(Me.Sotanghon_Price1)
         Me.Panel7.Controls.Add(Me.Sotanghon_Price2)
@@ -1026,11 +1160,21 @@ Partial Class Form1
         Me.Panel7.Controls.Add(Me.Label27)
         Me.Panel7.Controls.Add(Me.Sotanghon_Cat1)
         Me.Panel7.Controls.Add(Me.Sotanghon_Txt)
-        Me.Panel7.Location = New System.Drawing.Point(544, 411)
+        Me.Panel7.Location = New System.Drawing.Point(35, 581)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(245, 210)
+        Me.Panel7.Size = New System.Drawing.Size(389, 210)
         Me.Panel7.TabIndex = 11
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.Image = Global.Kwatogs_fin.My.Resources.Resources.sotanghon
+        Me.PictureBox7.Location = New System.Drawing.Point(247, 35)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(129, 110)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 12
+        Me.PictureBox7.TabStop = False
         '
         'Sotanghon_Price3
         '
@@ -1098,6 +1242,7 @@ Partial Class Form1
         '
         'Sotanghon_But
         '
+        Me.Sotanghon_But.BackColor = System.Drawing.Color.BurlyWood
         Me.Sotanghon_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Sotanghon_But.Location = New System.Drawing.Point(37, 170)
         Me.Sotanghon_But.Margin = New System.Windows.Forms.Padding(4)
@@ -1105,7 +1250,7 @@ Partial Class Form1
         Me.Sotanghon_But.Size = New System.Drawing.Size(107, 28)
         Me.Sotanghon_But.TabIndex = 4
         Me.Sotanghon_But.Text = "Add"
-        Me.Sotanghon_But.UseVisualStyleBackColor = True
+        Me.Sotanghon_But.UseVisualStyleBackColor = False
         '
         'Sotanghon_Qty
         '
@@ -1156,6 +1301,8 @@ Partial Class Form1
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.Transparent
+        Me.Panel8.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel8.Controls.Add(Me.Ksp_Price2)
         Me.Panel8.Controls.Add(Me.Ksp_Price1)
         Me.Panel8.Controls.Add(Me.Ksp2)
@@ -1163,10 +1310,10 @@ Partial Class Form1
         Me.Panel8.Controls.Add(Me.Ksp_But)
         Me.Panel8.Controls.Add(Me.Ksp_qty)
         Me.Panel8.Controls.Add(Me.Label23)
-        Me.Panel8.Location = New System.Drawing.Point(61, 625)
+        Me.Panel8.Location = New System.Drawing.Point(795, 363)
         Me.Panel8.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(190, 136)
+        Me.Panel8.Size = New System.Drawing.Size(221, 173)
         Me.Panel8.TabIndex = 10
         '
         'Ksp_Price2
@@ -1174,7 +1321,7 @@ Partial Class Form1
         Me.Ksp_Price2.AutoSize = True
         Me.Ksp_Price2.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Ksp_Price2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Ksp_Price2.Location = New System.Drawing.Point(100, 37)
+        Me.Ksp_Price2.Location = New System.Drawing.Point(100, 76)
         Me.Ksp_Price2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Ksp_Price2.Name = "Ksp_Price2"
         Me.Ksp_Price2.Size = New System.Drawing.Size(43, 22)
@@ -1186,7 +1333,7 @@ Partial Class Form1
         Me.Ksp_Price1.AutoSize = True
         Me.Ksp_Price1.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Ksp_Price1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Ksp_Price1.Location = New System.Drawing.Point(100, 5)
+        Me.Ksp_Price1.Location = New System.Drawing.Point(100, 46)
         Me.Ksp_Price1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Ksp_Price1.Name = "Ksp_Price1"
         Me.Ksp_Price1.Size = New System.Drawing.Size(43, 22)
@@ -1198,7 +1345,7 @@ Partial Class Form1
         Me.Ksp2.AutoSize = True
         Me.Ksp2.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Ksp2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Ksp2.Location = New System.Drawing.Point(4, 37)
+        Me.Ksp2.Location = New System.Drawing.Point(4, 76)
         Me.Ksp2.Margin = New System.Windows.Forms.Padding(4)
         Me.Ksp2.Name = "Ksp2"
         Me.Ksp2.Size = New System.Drawing.Size(76, 22)
@@ -1212,7 +1359,7 @@ Partial Class Form1
         Me.Ksp1.AutoSize = True
         Me.Ksp1.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Ksp1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Ksp1.Location = New System.Drawing.Point(4, 4)
+        Me.Ksp1.Location = New System.Drawing.Point(4, 46)
         Me.Ksp1.Margin = New System.Windows.Forms.Padding(4)
         Me.Ksp1.Name = "Ksp1"
         Me.Ksp1.Size = New System.Drawing.Size(76, 22)
@@ -1223,19 +1370,20 @@ Partial Class Form1
         '
         'Ksp_But
         '
+        Me.Ksp_But.BackColor = System.Drawing.Color.BurlyWood
         Me.Ksp_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Ksp_But.Location = New System.Drawing.Point(37, 98)
+        Me.Ksp_But.Location = New System.Drawing.Point(40, 136)
         Me.Ksp_But.Margin = New System.Windows.Forms.Padding(4)
         Me.Ksp_But.Name = "Ksp_But"
         Me.Ksp_But.Size = New System.Drawing.Size(107, 28)
         Me.Ksp_But.TabIndex = 4
         Me.Ksp_But.Text = "Add"
-        Me.Ksp_But.UseVisualStyleBackColor = True
+        Me.Ksp_But.UseVisualStyleBackColor = False
         '
         'Ksp_qty
         '
         Me.Ksp_qty.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
-        Me.Ksp_qty.Location = New System.Drawing.Point(100, 64)
+        Me.Ksp_qty.Location = New System.Drawing.Point(104, 106)
         Me.Ksp_qty.Margin = New System.Windows.Forms.Padding(4)
         Me.Ksp_qty.Name = "Ksp_qty"
         Me.Ksp_qty.Size = New System.Drawing.Size(43, 22)
@@ -1246,7 +1394,7 @@ Partial Class Form1
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label23.Location = New System.Drawing.Point(37, 67)
+        Me.Label23.Location = New System.Drawing.Point(40, 107)
         Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(31, 16)
@@ -1256,6 +1404,8 @@ Partial Class Form1
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.Transparent
+        Me.Panel9.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel9.Controls.Add(Me.Rice_Price2)
         Me.Panel9.Controls.Add(Me.Rice_Price1)
         Me.Panel9.Controls.Add(Me.Rice2)
@@ -1263,10 +1413,10 @@ Partial Class Form1
         Me.Panel9.Controls.Add(Me.Rice_But)
         Me.Panel9.Controls.Add(Me.Rice_Qty)
         Me.Panel9.Controls.Add(Me.Label29)
-        Me.Panel9.Location = New System.Drawing.Point(260, 625)
+        Me.Panel9.Location = New System.Drawing.Point(795, 544)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(173, 136)
+        Me.Panel9.Size = New System.Drawing.Size(218, 170)
         Me.Panel9.TabIndex = 11
         '
         'Rice_Price2
@@ -1274,7 +1424,7 @@ Partial Class Form1
         Me.Rice_Price2.AutoSize = True
         Me.Rice_Price2.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Rice_Price2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Rice_Price2.Location = New System.Drawing.Point(138, 37)
+        Me.Rice_Price2.Location = New System.Drawing.Point(138, 76)
         Me.Rice_Price2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Rice_Price2.Name = "Rice_Price2"
         Me.Rice_Price2.Size = New System.Drawing.Size(32, 22)
@@ -1286,7 +1436,7 @@ Partial Class Form1
         Me.Rice_Price1.AutoSize = True
         Me.Rice_Price1.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Rice_Price1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Rice_Price1.Location = New System.Drawing.Point(138, 5)
+        Me.Rice_Price1.Location = New System.Drawing.Point(138, 49)
         Me.Rice_Price1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Rice_Price1.Name = "Rice_Price1"
         Me.Rice_Price1.Size = New System.Drawing.Size(32, 22)
@@ -1298,7 +1448,7 @@ Partial Class Form1
         Me.Rice2.AutoSize = True
         Me.Rice2.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Rice2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Rice2.Location = New System.Drawing.Point(4, 37)
+        Me.Rice2.Location = New System.Drawing.Point(4, 76)
         Me.Rice2.Margin = New System.Windows.Forms.Padding(4)
         Me.Rice2.Name = "Rice2"
         Me.Rice2.Size = New System.Drawing.Size(126, 22)
@@ -1312,7 +1462,7 @@ Partial Class Form1
         Me.Rice1.AutoSize = True
         Me.Rice1.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Rice1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Rice1.Location = New System.Drawing.Point(4, 4)
+        Me.Rice1.Location = New System.Drawing.Point(4, 49)
         Me.Rice1.Margin = New System.Windows.Forms.Padding(4)
         Me.Rice1.Name = "Rice1"
         Me.Rice1.Size = New System.Drawing.Size(126, 22)
@@ -1323,19 +1473,20 @@ Partial Class Form1
         '
         'Rice_But
         '
+        Me.Rice_But.BackColor = System.Drawing.Color.BurlyWood
         Me.Rice_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Rice_But.Location = New System.Drawing.Point(37, 98)
+        Me.Rice_But.Location = New System.Drawing.Point(33, 136)
         Me.Rice_But.Margin = New System.Windows.Forms.Padding(4)
         Me.Rice_But.Name = "Rice_But"
         Me.Rice_But.Size = New System.Drawing.Size(107, 28)
         Me.Rice_But.TabIndex = 4
         Me.Rice_But.Text = "Add"
-        Me.Rice_But.UseVisualStyleBackColor = True
+        Me.Rice_But.UseVisualStyleBackColor = False
         '
         'Rice_Qty
         '
         Me.Rice_Qty.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
-        Me.Rice_Qty.Location = New System.Drawing.Point(100, 64)
+        Me.Rice_Qty.Location = New System.Drawing.Point(97, 107)
         Me.Rice_Qty.Margin = New System.Windows.Forms.Padding(4)
         Me.Rice_Qty.Name = "Rice_Qty"
         Me.Rice_Qty.Size = New System.Drawing.Size(43, 22)
@@ -1346,231 +1497,614 @@ Partial Class Form1
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label29.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label29.Location = New System.Drawing.Point(37, 67)
+        Me.Label29.Location = New System.Drawing.Point(46, 107)
         Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(31, 16)
         Me.Label29.TabIndex = 2
         Me.Label29.Text = "qty"
         '
-        'Orders_Listbox
-        '
-        Me.Orders_Listbox.FormattingEnabled = True
-        Me.Orders_Listbox.ItemHeight = 18
-        Me.Orders_Listbox.Items.AddRange(New Object() {"Qty" & Global.Microsoft.VisualBasic.ChrW(9) & "Meal" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "Price", "---------------------------------------------------------------------------------" &
-                "-----------------------"})
-        Me.Orders_Listbox.Location = New System.Drawing.Point(1015, 179)
-        Me.Orders_Listbox.Name = "Orders_Listbox"
-        Me.Orders_Listbox.Size = New System.Drawing.Size(521, 292)
-        Me.Orders_Listbox.TabIndex = 12
-        '
         'Proceed_but
         '
         Me.Proceed_but.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Proceed_but.Location = New System.Drawing.Point(1191, 487)
+        Me.Proceed_but.Location = New System.Drawing.Point(1234, 502)
         Me.Proceed_but.Margin = New System.Windows.Forms.Padding(4)
         Me.Proceed_but.Name = "Proceed_but"
-        Me.Proceed_but.Size = New System.Drawing.Size(200, 28)
+        Me.Proceed_but.Size = New System.Drawing.Size(113, 28)
         Me.Proceed_but.TabIndex = 16
-        Me.Proceed_but.Text = "Proceed to Payment"
+        Me.Proceed_but.Text = "Proceed"
         Me.Proceed_but.UseVisualStyleBackColor = True
         '
         'Panel10
         '
         Me.Panel10.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.rs__2_
         Me.Panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel10.Controls.Add(Me.Again_But)
-        Me.Panel10.Controls.Add(Me.Done_But)
-        Me.Panel10.Controls.Add(Me.Change)
-        Me.Panel10.Controls.Add(Me.Paid)
-        Me.Panel10.Controls.Add(Me.Discount)
-        Me.Panel10.Controls.Add(Me.TotalAmount)
-        Me.Panel10.Controls.Add(Me.Dc2)
-        Me.Panel10.Controls.Add(Me.Dc3)
-        Me.Panel10.Controls.Add(Me.Dc1)
-        Me.Panel10.Controls.Add(Me.name_txt)
+        Me.Panel10.Controls.Add(Me.Button2)
+        Me.Panel10.Controls.Add(Me.discounted_amount)
+        Me.Panel10.Controls.Add(Me.Label2)
+        Me.Panel10.Controls.Add(Me.sukli)
+        Me.Panel10.Controls.Add(Me.bayad)
+        Me.Panel10.Controls.Add(Me.num_discounted)
+        Me.Panel10.Controls.Add(Me.Label84)
+        Me.Panel10.Controls.Add(Me.tot_due)
+        Me.Panel10.Controls.Add(Me.Label11)
+        Me.Panel10.Controls.Add(Me.Label85)
+        Me.Panel10.Controls.Add(Me.Label15)
+        Me.Panel10.Controls.Add(Me.Label86)
+        Me.Panel10.Controls.Add(Me.vat)
+        Me.Panel10.Controls.Add(Me.sub_tot)
+        Me.Panel10.Controls.Add(Me.Label13)
+        Me.Panel10.Controls.Add(Me.Done_but)
+        Me.Panel10.Controls.Add(Me.Label8)
+        Me.Panel10.Controls.Add(Me.Panel27)
+        Me.Panel10.Controls.Add(Me.Costumer_name)
         Me.Panel10.Controls.Add(Me.Label10)
         Me.Panel10.Controls.Add(Me.Label9)
-        Me.Panel10.Controls.Add(Me.Label8)
-        Me.Panel10.Controls.Add(Me.Label5)
-        Me.Panel10.Controls.Add(Me.Label4)
-        Me.Panel10.Controls.Add(Me.Label2)
-        Me.Panel10.Location = New System.Drawing.Point(1094, 534)
+        Me.Panel10.Controls.Add(Me.num_customer)
+        Me.Panel10.Location = New System.Drawing.Point(1198, 593)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(337, 311)
+        Me.Panel10.Size = New System.Drawing.Size(337, 358)
         Me.Panel10.TabIndex = 17
         '
-        'Again_But
+        'Button2
         '
-        Me.Again_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Again_But.Location = New System.Drawing.Point(162, 251)
-        Me.Again_But.Name = "Again_But"
-        Me.Again_But.Size = New System.Drawing.Size(116, 23)
-        Me.Again_But.TabIndex = 15
-        Me.Again_But.Text = "Order Again"
-        Me.Again_But.UseVisualStyleBackColor = True
+        Me.Button2.Font = New System.Drawing.Font("HGPGothicE", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.Location = New System.Drawing.Point(174, 321)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(89, 25)
+        Me.Button2.TabIndex = 270
+        Me.Button2.Text = "Order Again"
+        Me.Button2.UseVisualStyleBackColor = True
         '
-        'Done_But
+        'discounted_amount
         '
-        Me.Done_But.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Done_But.Location = New System.Drawing.Point(61, 251)
-        Me.Done_But.Name = "Done_But"
-        Me.Done_But.Size = New System.Drawing.Size(75, 23)
-        Me.Done_But.TabIndex = 14
-        Me.Done_But.Text = "Done"
-        Me.Done_But.UseVisualStyleBackColor = True
-        '
-        'Change
-        '
-        Me.Change.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Change.Location = New System.Drawing.Point(185, 198)
-        Me.Change.Name = "Change"
-        Me.Change.Size = New System.Drawing.Size(100, 22)
-        Me.Change.TabIndex = 13
-        '
-        'Paid
-        '
-        Me.Paid.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Paid.Location = New System.Drawing.Point(185, 170)
-        Me.Paid.Name = "Paid"
-        Me.Paid.Size = New System.Drawing.Size(100, 22)
-        Me.Paid.TabIndex = 12
-        '
-        'Discount
-        '
-        Me.Discount.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Discount.Location = New System.Drawing.Point(185, 142)
-        Me.Discount.Name = "Discount"
-        Me.Discount.Size = New System.Drawing.Size(100, 22)
-        Me.Discount.TabIndex = 11
-        '
-        'TotalAmount
-        '
-        Me.TotalAmount.Enabled = False
-        Me.TotalAmount.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TotalAmount.Location = New System.Drawing.Point(185, 114)
-        Me.TotalAmount.Name = "TotalAmount"
-        Me.TotalAmount.Size = New System.Drawing.Size(100, 22)
-        Me.TotalAmount.TabIndex = 10
-        '
-        'Dc2
-        '
-        Me.Dc2.AutoSize = True
-        Me.Dc2.BackColor = System.Drawing.Color.Transparent
-        Me.Dc2.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Dc2.Location = New System.Drawing.Point(103, 90)
-        Me.Dc2.Name = "Dc2"
-        Me.Dc2.Size = New System.Drawing.Size(123, 18)
-        Me.Dc2.TabIndex = 9
-        Me.Dc2.TabStop = True
-        Me.Dc2.Text = "Senior Citizen"
-        Me.Dc2.UseVisualStyleBackColor = False
-        '
-        'Dc3
-        '
-        Me.Dc3.AutoSize = True
-        Me.Dc3.BackColor = System.Drawing.Color.Transparent
-        Me.Dc3.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Dc3.Location = New System.Drawing.Point(232, 90)
-        Me.Dc3.Name = "Dc3"
-        Me.Dc3.Size = New System.Drawing.Size(46, 18)
-        Me.Dc3.TabIndex = 8
-        Me.Dc3.TabStop = True
-        Me.Dc3.Text = "N/A"
-        Me.Dc3.UseVisualStyleBackColor = False
-        '
-        'Dc1
-        '
-        Me.Dc1.AutoSize = True
-        Me.Dc1.BackColor = System.Drawing.Color.Transparent
-        Me.Dc1.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Dc1.Location = New System.Drawing.Point(51, 91)
-        Me.Dc1.Name = "Dc1"
-        Me.Dc1.Size = New System.Drawing.Size(46, 18)
-        Me.Dc1.TabIndex = 7
-        Me.Dc1.TabStop = True
-        Me.Dc1.Text = "PWD"
-        Me.Dc1.UseVisualStyleBackColor = False
-        '
-        'name_txt
-        '
-        Me.name_txt.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.name_txt.Location = New System.Drawing.Point(185, 43)
-        Me.name_txt.Name = "name_txt"
-        Me.name_txt.Size = New System.Drawing.Size(100, 22)
-        Me.name_txt.TabIndex = 6
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Location = New System.Drawing.Point(51, 199)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(68, 18)
-        Me.Label10.TabIndex = 5
-        Me.Label10.Text = "Change"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Location = New System.Drawing.Point(51, 171)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(118, 18)
-        Me.Label9.TabIndex = 4
-        Me.Label9.Text = "Paid Amount"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Location = New System.Drawing.Point(51, 143)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(108, 18)
-        Me.Label8.TabIndex = 3
-        Me.Label8.Text = "Discounted"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Location = New System.Drawing.Point(51, 115)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(128, 18)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "Total Amount"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Courier New", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(51, 72)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(182, 15)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "8% discount if applicable"
+        Me.discounted_amount.Enabled = False
+        Me.discounted_amount.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.discounted_amount.Location = New System.Drawing.Point(197, 152)
+        Me.discounted_amount.Name = "discounted_amount"
+        Me.discounted_amount.Size = New System.Drawing.Size(66, 20)
+        Me.discounted_amount.TabIndex = 198
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(55, 44)
+        Me.Label2.Font = New System.Drawing.Font("HGPGothicE", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.Location = New System.Drawing.Point(56, 158)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 18)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Name"
+        Me.Label2.Size = New System.Drawing.Size(98, 11)
+        Me.Label2.TabIndex = 197
+        Me.Label2.Text = "Discounted amount"
+        '
+        'sukli
+        '
+        Me.sukli.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.sukli.Location = New System.Drawing.Point(147, 282)
+        Me.sukli.Name = "sukli"
+        Me.sukli.Size = New System.Drawing.Size(116, 20)
+        Me.sukli.TabIndex = 264
+        '
+        'bayad
+        '
+        Me.bayad.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.bayad.Location = New System.Drawing.Point(147, 256)
+        Me.bayad.Name = "bayad"
+        Me.bayad.Size = New System.Drawing.Size(116, 20)
+        Me.bayad.TabIndex = 269
+        '
+        'num_discounted
+        '
+        Me.num_discounted.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.num_discounted.Location = New System.Drawing.Point(234, 127)
+        Me.num_discounted.Name = "num_discounted"
+        Me.num_discounted.Size = New System.Drawing.Size(29, 20)
+        Me.num_discounted.TabIndex = 196
+        Me.num_discounted.Visible = False
+        '
+        'Label84
+        '
+        Me.Label84.AutoSize = True
+        Me.Label84.BackColor = System.Drawing.Color.Transparent
+        Me.Label84.Font = New System.Drawing.Font("HGPGothicE", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label84.Location = New System.Drawing.Point(56, 178)
+        Me.Label84.Name = "Label84"
+        Me.Label84.Size = New System.Drawing.Size(72, 16)
+        Me.Label84.TabIndex = 252
+        Me.Label84.Text = "Subtotal"
+        '
+        'tot_due
+        '
+        Me.tot_due.Enabled = False
+        Me.tot_due.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.tot_due.Location = New System.Drawing.Point(147, 230)
+        Me.tot_due.Name = "tot_due"
+        Me.tot_due.Size = New System.Drawing.Size(116, 20)
+        Me.tot_due.TabIndex = 268
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("HGPGothicE", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label11.Location = New System.Drawing.Point(168, 124)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(57, 22)
+        Me.Label11.TabIndex = 195
+        Me.Label11.Text = "No. Of " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Discounted"
+        Me.Label11.Visible = False
+        '
+        'Label85
+        '
+        Me.Label85.AutoSize = True
+        Me.Label85.BackColor = System.Drawing.Color.Transparent
+        Me.Label85.Font = New System.Drawing.Font("HGPGothicE", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label85.Location = New System.Drawing.Point(56, 256)
+        Me.Label85.Name = "Label85"
+        Me.Label85.Size = New System.Drawing.Size(40, 16)
+        Me.Label85.TabIndex = 253
+        Me.Label85.Text = "Paid"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Font = New System.Drawing.Font("HGPGothicE", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label15.Location = New System.Drawing.Point(56, 230)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(80, 16)
+        Me.Label15.TabIndex = 267
+        Me.Label15.Text = "Total Due"
+        '
+        'Label86
+        '
+        Me.Label86.AutoSize = True
+        Me.Label86.BackColor = System.Drawing.Color.Transparent
+        Me.Label86.Font = New System.Drawing.Font("HGPGothicE", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label86.Location = New System.Drawing.Point(56, 282)
+        Me.Label86.Name = "Label86"
+        Me.Label86.Size = New System.Drawing.Size(62, 16)
+        Me.Label86.TabIndex = 254
+        Me.Label86.Text = "Change"
+        '
+        'vat
+        '
+        Me.vat.Enabled = False
+        Me.vat.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.vat.Location = New System.Drawing.Point(147, 204)
+        Me.vat.Name = "vat"
+        Me.vat.Size = New System.Drawing.Size(116, 20)
+        Me.vat.TabIndex = 266
+        '
+        'sub_tot
+        '
+        Me.sub_tot.Enabled = False
+        Me.sub_tot.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.sub_tot.Location = New System.Drawing.Point(147, 178)
+        Me.sub_tot.Name = "sub_tot"
+        Me.sub_tot.Size = New System.Drawing.Size(116, 20)
+        Me.sub_tot.TabIndex = 255
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("HGPGothicE", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(56, 204)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(70, 16)
+        Me.Label13.TabIndex = 265
+        Me.Label13.Text = "Vat 12%"
+        '
+        'Done_but
+        '
+        Me.Done_but.Font = New System.Drawing.Font("HGPGothicE", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Done_but.Location = New System.Drawing.Point(80, 321)
+        Me.Done_but.Name = "Done_but"
+        Me.Done_but.Size = New System.Drawing.Size(74, 25)
+        Me.Done_but.TabIndex = 256
+        Me.Done_but.Text = "Done"
+        Me.Done_but.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("HGPGothicE", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.Location = New System.Drawing.Point(56, 59)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(48, 16)
+        Me.Label8.TabIndex = 258
+        Me.Label8.Text = "Name"
+        '
+        'Panel27
+        '
+        Me.Panel27.BackColor = System.Drawing.Color.Transparent
+        Me.Panel27.Controls.Add(Me.RadioButton1)
+        Me.Panel27.Controls.Add(Me.dc2)
+        Me.Panel27.Controls.Add(Me.dc1)
+        Me.Panel27.Location = New System.Drawing.Point(56, 102)
+        Me.Panel27.Name = "Panel27"
+        Me.Panel27.Size = New System.Drawing.Size(242, 19)
+        Me.Panel27.TabIndex = 251
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Font = New System.Drawing.Font("HGPGothicE", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.RadioButton1.Location = New System.Drawing.Point(171, 1)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(47, 15)
+        Me.RadioButton1.TabIndex = 123
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "N/A"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'dc2
+        '
+        Me.dc2.AutoSize = True
+        Me.dc2.Font = New System.Drawing.Font("HGPGothicE", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.dc2.Location = New System.Drawing.Point(61, 1)
+        Me.dc2.Name = "dc2"
+        Me.dc2.Size = New System.Drawing.Size(104, 15)
+        Me.dc2.TabIndex = 122
+        Me.dc2.TabStop = True
+        Me.dc2.Text = "Senior Citizen"
+        Me.dc2.UseVisualStyleBackColor = True
+        '
+        'dc1
+        '
+        Me.dc1.AutoSize = True
+        Me.dc1.Font = New System.Drawing.Font("HGPGothicE", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.dc1.Location = New System.Drawing.Point(8, 1)
+        Me.dc1.Name = "dc1"
+        Me.dc1.Size = New System.Drawing.Size(47, 15)
+        Me.dc1.TabIndex = 121
+        Me.dc1.TabStop = True
+        Me.dc1.Text = "PWD"
+        Me.dc1.UseVisualStyleBackColor = True
+        '
+        'Costumer_name
+        '
+        Me.Costumer_name.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Costumer_name.Location = New System.Drawing.Point(147, 59)
+        Me.Costumer_name.Name = "Costumer_name"
+        Me.Costumer_name.Size = New System.Drawing.Size(116, 20)
+        Me.Costumer_name.TabIndex = 259
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.Location = New System.Drawing.Point(56, 83)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(178, 13)
+        Me.Label10.TabIndex = 262
+        Me.Label10.Text = "20% discount if applicable"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("HGPGothicE", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label9.Location = New System.Drawing.Point(60, 124)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(51, 22)
+        Me.Label9.TabIndex = 260
+        Me.Label9.Text = "No. Of " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Customer"
+        '
+        'num_customer
+        '
+        Me.num_customer.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.num_customer.Location = New System.Drawing.Point(117, 126)
+        Me.num_customer.Name = "num_customer"
+        Me.num_customer.Size = New System.Drawing.Size(32, 20)
+        Me.num_customer.TabIndex = 261
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.Color.Transparent
+        Me.Panel11.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel11.Controls.Add(Me.PictureBox8)
+        Me.Panel11.Controls.Add(Me.tapsilog)
+        Me.Panel11.Controls.Add(Me.tapsilog_price)
+        Me.Panel11.Controls.Add(Me.tapsilog_but)
+        Me.Panel11.Controls.Add(Me.tapsilog_qty)
+        Me.Panel11.Controls.Add(Me.Label14)
+        Me.Panel11.Location = New System.Drawing.Point(35, 799)
+        Me.Panel11.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(301, 170)
+        Me.Panel11.TabIndex = 12
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.Kwatogs_fin.My.Resources.Resources.lutong_bahay_recipe_tapsilog
+        Me.PictureBox8.Location = New System.Drawing.Point(158, 30)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(129, 110)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox8.TabIndex = 13
+        Me.PictureBox8.TabStop = False
+        '
+        'tapsilog
+        '
+        Me.tapsilog.AutoSize = True
+        Me.tapsilog.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.tapsilog.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.tapsilog.Location = New System.Drawing.Point(23, 66)
+        Me.tapsilog.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.tapsilog.Name = "tapsilog"
+        Me.tapsilog.Size = New System.Drawing.Size(88, 18)
+        Me.tapsilog.TabIndex = 8
+        Me.tapsilog.Text = "Tapsilog"
+        '
+        'tapsilog_price
+        '
+        Me.tapsilog_price.AutoSize = True
+        Me.tapsilog_price.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.tapsilog_price.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.tapsilog_price.Location = New System.Drawing.Point(119, 66)
+        Me.tapsilog_price.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.tapsilog_price.Name = "tapsilog_price"
+        Me.tapsilog_price.Size = New System.Drawing.Size(32, 22)
+        Me.tapsilog_price.TabIndex = 7
+        Me.tapsilog_price.Text = "65"
+        '
+        'tapsilog_but
+        '
+        Me.tapsilog_but.BackColor = System.Drawing.Color.BurlyWood
+        Me.tapsilog_but.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.tapsilog_but.Location = New System.Drawing.Point(33, 136)
+        Me.tapsilog_but.Margin = New System.Windows.Forms.Padding(4)
+        Me.tapsilog_but.Name = "tapsilog_but"
+        Me.tapsilog_but.Size = New System.Drawing.Size(107, 28)
+        Me.tapsilog_but.TabIndex = 4
+        Me.tapsilog_but.Text = "Add"
+        Me.tapsilog_but.UseVisualStyleBackColor = False
+        '
+        'tapsilog_qty
+        '
+        Me.tapsilog_qty.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.tapsilog_qty.Location = New System.Drawing.Point(97, 107)
+        Me.tapsilog_qty.Margin = New System.Windows.Forms.Padding(4)
+        Me.tapsilog_qty.Name = "tapsilog_qty"
+        Me.tapsilog_qty.Size = New System.Drawing.Size(43, 22)
+        Me.tapsilog_qty.TabIndex = 3
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label14.Location = New System.Drawing.Point(46, 107)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(31, 16)
+        Me.Label14.TabIndex = 2
+        Me.Label14.Text = "qty"
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.Transparent
+        Me.Panel12.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel12.Controls.Add(Me.tocilog_)
+        Me.Panel12.Controls.Add(Me.tocilog)
+        Me.Panel12.Controls.Add(Me.tocilog_price)
+        Me.Panel12.Controls.Add(Me.tocilog_but)
+        Me.Panel12.Controls.Add(Me.tocilog_qty)
+        Me.Panel12.Controls.Add(Me.Label18)
+        Me.Panel12.Location = New System.Drawing.Point(344, 799)
+        Me.Panel12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(301, 170)
+        Me.Panel12.TabIndex = 14
+        '
+        'tocilog_
+        '
+        Me.tocilog_.Image = Global.Kwatogs_fin.My.Resources.Resources.toc
+        Me.tocilog_.Location = New System.Drawing.Point(158, 30)
+        Me.tocilog_.Name = "tocilog_"
+        Me.tocilog_.Size = New System.Drawing.Size(129, 110)
+        Me.tocilog_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.tocilog_.TabIndex = 13
+        Me.tocilog_.TabStop = False
+        '
+        'tocilog
+        '
+        Me.tocilog.AutoSize = True
+        Me.tocilog.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.tocilog.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.tocilog.Location = New System.Drawing.Point(23, 66)
+        Me.tocilog.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.tocilog.Name = "tocilog"
+        Me.tocilog.Size = New System.Drawing.Size(78, 18)
+        Me.tocilog.TabIndex = 8
+        Me.tocilog.Text = "Tocilog"
+        '
+        'tocilog_price
+        '
+        Me.tocilog_price.AutoSize = True
+        Me.tocilog_price.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.tocilog_price.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.tocilog_price.Location = New System.Drawing.Point(119, 66)
+        Me.tocilog_price.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.tocilog_price.Name = "tocilog_price"
+        Me.tocilog_price.Size = New System.Drawing.Size(32, 22)
+        Me.tocilog_price.TabIndex = 7
+        Me.tocilog_price.Text = "65"
+        '
+        'tocilog_but
+        '
+        Me.tocilog_but.BackColor = System.Drawing.Color.BurlyWood
+        Me.tocilog_but.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.tocilog_but.Location = New System.Drawing.Point(33, 136)
+        Me.tocilog_but.Margin = New System.Windows.Forms.Padding(4)
+        Me.tocilog_but.Name = "tocilog_but"
+        Me.tocilog_but.Size = New System.Drawing.Size(107, 28)
+        Me.tocilog_but.TabIndex = 4
+        Me.tocilog_but.Text = "Add"
+        Me.tocilog_but.UseVisualStyleBackColor = False
+        '
+        'tocilog_qty
+        '
+        Me.tocilog_qty.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.tocilog_qty.Location = New System.Drawing.Point(97, 107)
+        Me.tocilog_qty.Margin = New System.Windows.Forms.Padding(4)
+        Me.tocilog_qty.Name = "tocilog_qty"
+        Me.tocilog_qty.Size = New System.Drawing.Size(43, 22)
+        Me.tocilog_qty.TabIndex = 3
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label18.Location = New System.Drawing.Point(46, 107)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(31, 16)
+        Me.Label18.TabIndex = 2
+        Me.Label18.Text = "qty"
+        '
+        'Panel13
+        '
+        Me.Panel13.BackColor = System.Drawing.Color.Transparent
+        Me.Panel13.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.asdd__3_
+        Me.Panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel13.Controls.Add(Me.PictureBox10)
+        Me.Panel13.Controls.Add(Me.chicksilog)
+        Me.Panel13.Controls.Add(Me.chicksilog_price)
+        Me.Panel13.Controls.Add(Me.chicksilog_but)
+        Me.Panel13.Controls.Add(Me.chicksilog_qty)
+        Me.Panel13.Controls.Add(Me.Label21)
+        Me.Panel13.Location = New System.Drawing.Point(653, 799)
+        Me.Panel13.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(312, 170)
+        Me.Panel13.TabIndex = 14
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.Kwatogs_fin.My.Resources.Resources.ch
+        Me.PictureBox10.Location = New System.Drawing.Point(175, 30)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(129, 110)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox10.TabIndex = 13
+        Me.PictureBox10.TabStop = False
+        '
+        'chicksilog
+        '
+        Me.chicksilog.AutoSize = True
+        Me.chicksilog.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.chicksilog.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.chicksilog.Location = New System.Drawing.Point(23, 66)
+        Me.chicksilog.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.chicksilog.Name = "chicksilog"
+        Me.chicksilog.Size = New System.Drawing.Size(108, 18)
+        Me.chicksilog.TabIndex = 8
+        Me.chicksilog.Text = "Chicksilog"
+        '
+        'chicksilog_price
+        '
+        Me.chicksilog_price.AutoSize = True
+        Me.chicksilog_price.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.chicksilog_price.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.chicksilog_price.Location = New System.Drawing.Point(139, 66)
+        Me.chicksilog_price.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.chicksilog_price.Name = "chicksilog_price"
+        Me.chicksilog_price.Size = New System.Drawing.Size(32, 22)
+        Me.chicksilog_price.TabIndex = 7
+        Me.chicksilog_price.Text = "75"
+        '
+        'chicksilog_but
+        '
+        Me.chicksilog_but.BackColor = System.Drawing.Color.BurlyWood
+        Me.chicksilog_but.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.chicksilog_but.Location = New System.Drawing.Point(33, 136)
+        Me.chicksilog_but.Margin = New System.Windows.Forms.Padding(4)
+        Me.chicksilog_but.Name = "chicksilog_but"
+        Me.chicksilog_but.Size = New System.Drawing.Size(107, 28)
+        Me.chicksilog_but.TabIndex = 4
+        Me.chicksilog_but.Text = "Add"
+        Me.chicksilog_but.UseVisualStyleBackColor = False
+        '
+        'chicksilog_qty
+        '
+        Me.chicksilog_qty.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
+        Me.chicksilog_qty.Location = New System.Drawing.Point(97, 107)
+        Me.chicksilog_qty.Margin = New System.Windows.Forms.Padding(4)
+        Me.chicksilog_qty.Name = "chicksilog_qty"
+        Me.chicksilog_qty.Size = New System.Drawing.Size(43, 22)
+        Me.chicksilog_qty.TabIndex = 3
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label21.Location = New System.Drawing.Point(46, 107)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(31, 16)
+        Me.Label21.TabIndex = 2
+        Me.Label21.Text = "qty"
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(1383, 502)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(113, 28)
+        Me.Button1.TabIndex = 19
+        Me.Button1.Text = "Remove"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Column_qty, Me.Column_Desc, Me.Column_Price})
+        Me.ListView1.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        ListViewItem1.StateImageIndex = 0
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
+        Me.ListView1.Location = New System.Drawing.Point(1139, 191)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(465, 304)
+        Me.ListView1.TabIndex = 246
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'Column_qty
+        '
+        Me.Column_qty.Text = "Qty"
+        Me.Column_qty.Width = 50
+        '
+        'Column_Desc
+        '
+        Me.Column_Desc.Text = "Description"
+        Me.Column_Desc.Width = 250
+        '
+        'Column_Price
+        '
+        Me.Column_Price.Text = "Price"
+        Me.Column_Price.Width = 150
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.Brown_Wood_Texture_We_Are_Open_Animated_Instagram_Post
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1606, 932)
+        Me.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.wbgss__2_
+        Me.ClientSize = New System.Drawing.Size(1674, 1033)
+        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Panel13)
+        Me.Controls.Add(Me.Panel12)
+        Me.Controls.Add(Me.Panel11)
         Me.Controls.Add(Me.Panel10)
         Me.Controls.Add(Me.Proceed_but)
-        Me.Controls.Add(Me.Orders_Listbox)
         Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel7)
@@ -1579,7 +2113,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Price_Listbox)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
@@ -1588,24 +2121,42 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
+        Me.Panel27.ResumeLayout(False)
+        Me.Panel27.PerformLayout()
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel11.PerformLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        CType(Me.tocilog_, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel13.PerformLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1623,7 +2174,6 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Lomi_Cat1 As RadioButton
     Friend WithEvents Lomi_Txt As Label
-    Friend WithEvents Price_Listbox As ListBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Canton_Price3 As Label
     Friend WithEvents Canton_Price1 As Label
@@ -1706,23 +2256,64 @@ Partial Class Form1
     Friend WithEvents Rice_But As Button
     Friend WithEvents Rice_Qty As TextBox
     Friend WithEvents Label29 As Label
-    Friend WithEvents Orders_Listbox As ListBox
     Friend WithEvents Proceed_but As Button
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents Again_But As Button
-    Friend WithEvents Done_But As Button
-    Friend WithEvents Change As TextBox
-    Friend WithEvents Paid As TextBox
-    Friend WithEvents Discount As TextBox
-    Friend WithEvents TotalAmount As TextBox
-    Friend WithEvents Dc2 As RadioButton
-    Friend WithEvents Dc3 As RadioButton
-    Friend WithEvents Dc1 As RadioButton
-    Friend WithEvents name_txt As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents tapsilog As Label
+    Friend WithEvents tapsilog_price As Label
+    Friend WithEvents tapsilog_but As Button
+    Friend WithEvents tapsilog_qty As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents tocilog_ As PictureBox
+    Friend WithEvents tocilog As Label
+    Friend WithEvents tocilog_price As Label
+    Friend WithEvents tocilog_but As Button
+    Friend WithEvents tocilog_qty As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents chicksilog As Label
+    Friend WithEvents chicksilog_price As Label
+    Friend WithEvents chicksilog_but As Button
+    Friend WithEvents chicksilog_qty As TextBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents discounted_amount As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents sukli As TextBox
+    Friend WithEvents bayad As TextBox
+    Friend WithEvents num_discounted As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label84 As Label
+    Friend WithEvents tot_due As TextBox
+    Friend WithEvents Label85 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label86 As Label
+    Friend WithEvents vat As TextBox
+    Friend WithEvents sub_tot As TextBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Done_but As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Panel27 As Panel
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents dc2 As RadioButton
+    Friend WithEvents dc1 As RadioButton
+    Friend WithEvents Costumer_name As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents num_customer As TextBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents Column_qty As ColumnHeader
+    Friend WithEvents Column_Desc As ColumnHeader
+    Friend WithEvents Column_Price As ColumnHeader
 End Class

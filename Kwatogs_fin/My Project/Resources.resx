@@ -118,16 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bihon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bihon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Brown Wood Texture We Are Open Animated Instagram Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Brown Wood Texture We Are Open Animated Instagram Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="balackg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\balackg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lomi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lomi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rs (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rs (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asdd (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asdd (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toc1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chami" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chami.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wbgss (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wbgss (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asdd (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asdd (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="310992923_1162026428049796_3404864780452853712_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\310992923_1162026428049796_3404864780452853712_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ch.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rs (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rs (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rs (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rs (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sotanghon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sotanghon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yakisoba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yakisoba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asdd (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asdd (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canton1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lutong-bahay-recipe-tapsilog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lutong-bahay-recipe-tapsilog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
