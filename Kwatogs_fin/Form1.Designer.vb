@@ -178,8 +178,9 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Column_qty = New System.Windows.Forms.ColumnHeader()
-        Me.Column_Desc = New System.Windows.Forms.ColumnHeader()
+        Me.Column_meal = New System.Windows.Forms.ColumnHeader()
         Me.Column_Price = New System.Windows.Forms.ColumnHeader()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -2066,7 +2067,7 @@ Partial Class Form1
         '
         'ListView1
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Column_qty, Me.Column_Desc, Me.Column_Price})
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Column_qty, Me.Column_meal, Me.Column_Price})
         Me.ListView1.Font = New System.Drawing.Font("HGPGothicE", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         ListViewItem1.StateImageIndex = 0
         Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
@@ -2082,15 +2083,26 @@ Partial Class Form1
         Me.Column_qty.Text = "Qty"
         Me.Column_qty.Width = 50
         '
-        'Column_Desc
+        'Column_meal
         '
-        Me.Column_Desc.Text = "Description"
-        Me.Column_Desc.Width = 250
+        Me.Column_meal.Text = "Meal"
+        Me.Column_meal.Width = 250
         '
         'Column_Price
         '
         Me.Column_Price.Text = "Price"
         Me.Column_Price.Width = 150
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button3.Location = New System.Drawing.Point(28, 13)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(113, 28)
+        Me.Button3.TabIndex = 253
+        Me.Button3.Text = "UI 1"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -2098,6 +2110,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Kwatogs_fin.My.Resources.Resources.wbgss__2_
         Me.ClientSize = New System.Drawing.Size(1674, 1033)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel13)
@@ -2314,6 +2327,7 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Column_qty As ColumnHeader
-    Friend WithEvents Column_Desc As ColumnHeader
+    Friend WithEvents Column_meal As ColumnHeader
     Friend WithEvents Column_Price As ColumnHeader
+    Friend WithEvents Button3 As Button
 End Class

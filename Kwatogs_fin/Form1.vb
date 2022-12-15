@@ -15,17 +15,17 @@ Public Class Form1
 
         If Lomi_Cat1.Checked Then
             price = Val(Lomi_Price1.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Regular " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Lomi_Cat2.Checked Then
             price = Val(Lomi_Price2.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Special " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Lomi_Cat3.Checked Then
             price = Val(Lomi_Price3.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Overload " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
 
@@ -40,17 +40,17 @@ Public Class Form1
 
         If Canton_Cat1.Checked Then
             price = Val(Canton_Price1.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Special " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Canton_Cat2.Checked Then
             price = Val(Canton_Price2.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Chicken " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Canton_Cat3.Checked Then
             price = Val(Canton_Price3.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Sisig " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
 
@@ -66,17 +66,17 @@ Public Class Form1
 
         If Chami_Cat1.Checked Then
             price = Val(Chami_Price1.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Special " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Chami_Cat2.Checked Then
             price = Val(Chami_Price2.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Chicken " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Chami_Cat3.Checked Then
             price = Val(Chami_Price3.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Sisig " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
 
@@ -92,17 +92,17 @@ Public Class Form1
 
         If Bihon_Cat1.Checked Then
             price = Val(Bihon_Price1.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Special " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Bihon_Cat2.Checked Then
             price = Val(Bihon_Price2.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Chicken " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Bihon_Cat3.Checked Then
             price = Val(Bihon_Price3.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Sisig " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
 
@@ -117,17 +117,17 @@ Public Class Form1
 
         If BlackG_Cat1.Checked Then
             price = Val(BlackG_Price1.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Special " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If BlackG_Cat2.Checked Then
             price = Val(BlackG_Price2.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Chicken " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If BlackG_Cat3.Checked Then
             price = Val(BlackG_Price3.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Sisig " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
 
@@ -142,17 +142,17 @@ Public Class Form1
 
         If Yakisoba_Cat1.Checked Then
             price = Val(Yakisoba_Price1.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Special " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Yakisoba_Cat2.Checked Then
             price = Val(Yakisoba_Price2.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Chicken " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Yakisoba_Cat3.Checked Then
             price = Val(Yakisoba_Price3.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Sisig " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
 
@@ -167,17 +167,17 @@ Public Class Form1
 
         If Sotanghon_Cat1.Checked Then
             price = Val(Sotanghon_Price1.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Special " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Sotanghon_Cat2.Checked Then
             price = Val(Sotanghon_Price2.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Chicken " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
         If Sotanghon_Cat3.Checked Then
             price = Val(Sotanghon_Price3.Text) * qty
-            Dim otherItems As String() = {meal, price}
+            Dim otherItems As String() = {"Sisig " & meal, price}
             Me.ListView1.Items.Add(qty).SubItems.AddRange(otherItems)
         End If
 
@@ -341,5 +341,10 @@ Public Class Form1
                "Paid:" & vbTab & vbTab & Val(bayad.Text) & vbCrLf &
                "Change:" & vbTab & vbTab & Val(sukli.Text))
         Me.Close()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Form2.Show()
+        Me.Hide()
     End Sub
 End Class
